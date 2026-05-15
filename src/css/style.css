@@ -137,10 +137,18 @@ section { padding: 100px 0 80px; }
   display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link:hover {
+    filter: brightness(1.1);
+}
 .projeto-card {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 32px 28px;
-  transition: all 0.3s; cursor: default;
+  transition: all 0.3s; cursor: pointer;
 }
 .projeto-card:hover {
   border-color: var(--accent); transform: translateY(-4px);
