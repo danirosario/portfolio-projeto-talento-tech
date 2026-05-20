@@ -242,6 +242,98 @@ section { padding: 140px 0 100px; }
 }
 .profile-pic:hover { filter: saturate(1.1); }
 
+/* SEÇÃO TALENTO TECH */
+#talento-tech {
+  position: relative;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.talento-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.talento-content p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+}
+
+.talento-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.badge-item {
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 8px 18px;
+  background: rgba(158, 75, 236, 0.05);
+  border: 1px dashed rgba(158, 75, 236, 0.3);
+  border-radius: 30px;
+  color: var(--text);
+}
+
+/* Card Destaque Assimétrico */
+.talento-card-destaque {
+  background: var(--bg);
+  border: 1px solid var(--border-hover);
+  border-radius: 24px 40px 16px 32px; /* Curvas orgânicas e imperfeitas */
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.talento-card-destaque::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(158, 75, 236, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.card-status {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--accent);
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.talento-card-destaque h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.talento-card-destaque p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Ajuste Responsivo */
+@media (max-width: 768px) {
+  .talento-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 .projetos-grid { 
   display: grid; 
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
