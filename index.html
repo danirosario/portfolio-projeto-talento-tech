@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Dev & Designer</title>
+    <title>Portfólio - Daniela Rosário</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
 
   <body>
+    <div class="organic-glow-1"></div>
+    <div class="organic-glow-2"></div>
+
     <nav>
       <div class="container">
-        <a href="#" class="logo">&lt;dev /&gt;</a>
+        <a href="#" class="logo">daniela<span>.</span></a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -31,15 +35,15 @@
     <section id="hero">
       <div class="container">
         <div class="hero-content">
-          <p class="hero-greeting">&gt; olá, meu nome é</p>
-          <h1>Daniela<br /><span>Rosario</span></h1>
+          <p class="hero-greeting">Olá, meu nome é</p>
+          <h1>Daniela Rosário</h1>
           <p>
-            Desenvolvedora web & designer com foco em criar experiencias
-            digitais únicas, funcionais e com proposito.
+            Sou desenvolvedora web e designer. Unindo a lógica estruturada de
+            software à fluidez e sensibilidade do design centrado no usuário.
           </p>
           <div class="hero-actions">
-            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-            <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+            <a href="#projetos" class="btn btn-primary">Conhecer Projetos</a>
+            <a href="#contato" class="btn btn-outline">Vamos Conversar</a>
           </div>
         </div>
       </div>
@@ -47,32 +51,36 @@
 
     <section id="sobre">
       <div class="container">
-        <p class="section-tag reveal">Sobre mim</p>
+        <h2 class="section-title reveal">Sobre Mim</h2>
         <div class="sobre-grid">
           <div class="sobre-text reveal">
             <p>
-              Desenvolvedora web com foco em Experiência do Usuário. Minha
-              jornada começou no Design de Mídias Digitais, mas foi na
-              programação que encontrei meu verdadeiro propósito.
+              Com raízes profundas no Design de Mídias Digitais, descobri no
+              código uma nova forma de dar vida às ideias. Atualmente, curso
+              Análise e Desenvolvimento de Sistemas e Técnico em Informática.
             </p>
             <p>
-              Hoje, curso Análise e Desenvolvimento de Sistemas e Técnico em
-              Informática, unindo uma base sólida em UI/UX à construção de
-              software. Meu foco é atuar na interseção entre código e design,
-              desenvolvendo soluções que equilibram lógica com interfaces
-              funcionais e esteticamente atraentes.
+              Acredito que a tecnologia não precisa ser fria. Busco construir
+              interfaces fluidas, polidas e eficientes, onde cada linha de
+              código serve ao propósito de melhorar a experiência humana.
             </p>
             <div class="tech-list">
               <span class="tech-badge">C#</span>
               <span class="tech-badge">C</span>
-              <span class="tech-badge">HTML e CSS</span>
+              <span class="tech-badge">HTML / CSS</span>
               <span class="tech-badge">JavaScript</span>
               <span class="tech-badge">Figma</span>
               <span class="tech-badge">UI/UX</span>
             </div>
           </div>
           <div class="sobre-image reveal">
-            <img src="src/img/foto.jpeg" alt="Daniela Rosario" width="400" height="400" />
+            <div class="profile-pic-container">
+              <img
+                src="src/img/Daniela.jpeg"
+                alt="Daniela Rosario"
+                class="profile-pic"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -80,45 +88,94 @@
 
     <section id="projetos">
       <div class="container">
-        <p class="section-tag reveal">Projetos</p>
-        <h2 class="section-title reveal">Trabalhos recentes</h2>
+        <h2 class="section-title reveal">Projetos Selecionados</h2>
         <div class="projetos-grid">
-          <div class="projeto-card reveal">
-            <span class="icon">&#x1f4bb;</span>
-            <h3>E-commerce Dashboard</h3>
-            <p>
-              Painel administrativo completo com graficos, gestao de pedidos e
-              usuarios.
-            </p>
-            <div class="tags">
-              <span>React</span><span>Node</span><span>PostgreSQL</span>
+          <a
+            href="https://github.com/danirosario/TicTacToe"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="projeto-card reveal">
+              <div class="card-header">
+                <span class="card-num">01</span>
+              </div>
+              <h3>Jogo da Velha (Terminal)</h3>
+              <p>
+                Construído puramente em C. Um mergulho na lógica estruturada de
+                programação, matrizes e manipulação de estados direto no
+                terminal.
+              </p>
+              <div class="tags">
+                <span>C</span><span>Lógica</span><span>Terminal</span>
+              </div>
             </div>
-          </div>
-          <div class="projeto-card reveal">
-            <span class="icon">&#x1f310;</span>
-            <h3>Landing Page</h3>
-            <p>
-              Site institucional moderno com animacoes suaves e design
-              responsivo.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
+          </a>
+
+          <a
+            href="https://github.com/danirosario/calculator"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="projeto-card reveal">
+              <div class="card-header">
+                <span class="card-num">02</span>
+              </div>
+              <h3>Calculadora Contínua</h3>
+              <p>
+                Desenvolvida em C, focada na persistência de dados em memória
+                para execução de fluxos matemáticos ininterruptos.
+              </p>
+              <div class="tags"><span>C</span><span>Algoritmos</span></div>
             </div>
-          </div>
-          <div class="projeto-card reveal">
-            <span class="icon">&#x1f58c;</span>
-            <h3>Identidade Visual</h3>
-            <p>
-              Branding completo para startup de tecnologia, do logo ao
-              prototipo.
-            </p>
-            <div class="tags"><span>Figma</span><span>Illustrator</span></div>
-          </div>
+          </a>
+
+          <a
+            href="https://www.behance.net/gallery/249429141/Mockup-Sistema-para-Hamburgueria"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="projeto-card reveal">
+              <div class="card-header">
+                <span class="card-num">03</span>
+              </div>
+              <h3>Sistema Hamburgueria</h3>
+              <p>
+                Arquitetura de informação e prototipagem de alta fidelidade
+                interativa feita inteiramente no Figma e Illustrator.
+              </p>
+              <div class="tags">
+                <span>Figma</span><span>UI/UX</span><span>Design</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/danirosario/hangmanGame"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="projeto-card reveal">
+              <div class="card-header">
+                <span class="card-num">04</span>
+              </div>
+              <h3>Jogo da Forca</h3>
+              <p>
+                Projeto focado no tratamento rigoroso de entradas e manipulação
+                avançada de strings e vetores em C.
+              </p>
+              <div class="tags"><span>C</span><span>Estruturas</span></div>
+            </div>
+          </a>
         </div>
-        <br />
-        <div class="hero-actions">
-          <a href="#" class="btn btn-primary" target="_blank"
-            >Ver portfólio completo</a
+        <div
+          class="hero-actions"
+          style="margin-top: 50px; justify-content: center"
+        >
+          <a
+            href="https://github.com/danirosario?tab=repositories"
+            class="btn btn-primary"
+            target="_blank"
+            >Explorar GitHub Completo</a
           >
         </div>
       </div>
@@ -126,55 +183,62 @@
 
     <section id="formacao">
       <div class="container">
-        <p class="section-tag reveal">Formacao</p>
-        <h2 class="section-title reveal">Educacao & cursos</h2>
+        <h2 class="section-title reveal">Formação Acadêmica</h2>
         <div class="formacao-list">
           <div class="formacao-item reveal">
-            <span class="formacao-year">2026 — 2028</span>
+            <span class="formacao-year">2026 — Atual </span>
             <div class="formacao-info">
-              <h3>Analise e Desenvolvimento de Sistemas</h3>
-              <p>
-                Faculdade de Tecnologia de Guaratinguetá (FATEC) - Graduação
-              </p>
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p>FATEC Guaratinguetá • Tecnólogo</p>
             </div>
           </div>
+
           <div class="formacao-item reveal">
-            <span class="formacao-year">2025 - 2026</span>
+            <span class="formacao-year">2025 — Atual </span>
             <div class="formacao-info">
               <h3>Técnico em Informática</h3>
-              <p>SENAC Guaratinguetá</p>
+              <p>SENAC Guaratinguetá • Técnico</p>
             </div>
           </div>
+
           <div class="formacao-item reveal">
-            <span class="formacao-year">2024 - 2025</span>
+            <span class="formacao-year">2024 — 2025 </span>
             <div class="formacao-info">
               <h3>Design de Mídias Digitais</h3>
-              <p>
-                Faculdade de Tecnologia de Guaratinguetá (FATEC) - Graduação
-              </p>
+              <p>FATEC Guaratinguetá • Tecnólogo</p>
             </div>
           </div>
+
           <div class="formacao-item reveal">
-            <span class="formacao-year">2024</span>
+            <span class="formacao-year">2024 </span>
             <div class="formacao-info">
               <h3>UX Design de Produtos Digitais</h3>
-              <p>SENAC Guaratinguetá</p>
+              <p>SENAC Guaratinguetá • Extensão</p>
             </div>
           </div>
-          <br />
-          <div class="hero-actions">
-            <a href="#" class="btn btn-primary" target="_blank"
-              >Ver currículo completo</a
-            >
-          </div>
+        </div>
+        <div
+          class="hero-actions"
+          style="margin-top: 50px; justify-content: center"
+        >
+          <button
+            class="btn btn-outline"
+            onclick="window.open('src/docs/curriculo.pdf', '_blank')"
+          >
+            Visualizar Currículo Completo
+          </button>
         </div>
       </div>
     </section>
 
     <section id="contato">
       <div class="container">
-        <p class="section-tag reveal">Contato</p>
-        <h2 class="section-title reveal">Onde me encontrar</h2>
+        <h2
+          class="section-title reveal"
+          style="text-align: center; margin-bottom: 60px"
+        >
+          Onde me encotrar
+        </h2>
         <div class="social-grid">
           <a
             href="https://www.linkedin.com/in/daniela-toledo-79997319a/"
@@ -185,7 +249,7 @@
             <div class="social-icon">in</div>
             <div>
               <div class="social-name">LinkedIn</div>
-              <div class="social-handle">daniela toledo</div>
+              <div class="social-handle">Conectar profissionalmente</div>
             </div>
           </a>
           <a
@@ -194,10 +258,10 @@
             rel="noopener"
             class="social-card reveal"
           >
-            <div class="social-icon">&gt;_</div>
+            <div class="social-icon">gh</div>
             <div>
               <div class="social-name">GitHub</div>
-              <div class="social-handle">danirosario</div>
+              <div class="social-handle">Ver repositórios de código</div>
             </div>
           </a>
           <a
@@ -206,10 +270,10 @@
             rel="noopener"
             class="social-card reveal"
           >
-            <div class="social-icon">Be</div>
+            <div class="social-icon">be</div>
             <div>
               <div class="social-name">Behance</div>
-              <div class="social-handle">daniela rosario</div>
+              <div class="social-handle">Portfólio visual e interfaces</div>
             </div>
           </a>
         </div>
@@ -218,7 +282,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2026 Daniela Rosário.</p>
+        <p>© Daniela Rosario. 2026</p>
       </div>
     </footer>
 

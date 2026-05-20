@@ -1,3 +1,4 @@
 {
-    "git.openRepositoryInParentFolders": "prompt"
+    "git.openRepositoryInParentFolders": "prompt",
+    "liveServer.settings.port": 5502
 }
