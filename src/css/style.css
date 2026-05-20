@@ -261,7 +261,6 @@ section { padding: 140px 0 100px; }
     filter: brightness(1.1);
 }
 .projeto-card {
-<<<<<<< HEAD
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
@@ -271,11 +270,6 @@ section { padding: 140px 0 100px; }
   transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   display: flex; 
   flex-direction: column;
-=======
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 32px 28px;
-  transition: all 0.3s; cursor: pointer;
->>>>>>> a7b30dc402af12152f8c29d8023d81480e5639c2
 }
 .projeto-card:hover {
   transform: translateY(-6px);
